@@ -1,0 +1,56 @@
+.Images{
+    input{
+        width: 100%;
+        max-width: 400px;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        padding: 1em;
+        color: #fff;
+        margin-bottom: 2em;
+        font-size: 1em;
+        box-sizing: border-box;
+
+        &::placeholder{
+            color: darken(white, 10%)
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .Scrollable{
+        overflow: auto;
+        height: calc(100vh - 380px);
+    }
+
+    .Items{
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+.Single{
+    display: block;
+    background: rgba(white, 0.5);
+    padding: 2em;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    &:hover{
+        background: rgba(white, 0.75);
+    }
+
+    img{
+        margin-right: 2em;
+        box-shadow: 1px 5px 7px -5px #000;
+        height: 150px;
+        height: 150px;
+    }
+}

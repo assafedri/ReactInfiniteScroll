@@ -1,0 +1,43 @@
+.Backdrop{
+    position: fixed;
+    top: 0,;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-Index: 1000;
+    overflow: hidden;
+}
+
+.Modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    overflow: hidden;
+    max-width: calc(100% - 4em);
+    padding: 2em;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    
+    img{
+        max-width: 100%;
+    }
+
+    button{
+        background: linear-gradient(to right, #c33764, #1d2671);
+        border-radius: 25px;
+        color: white;
+        font-size: 1em;
+        padding: 0.5em 2em;
+        cursor: pointer;
+
+        &:hover{
+            background: linear-gradient(to right, lighten(#c33764, 10%), lighten(#1d2671, 10%));
+        }
+    }
+}

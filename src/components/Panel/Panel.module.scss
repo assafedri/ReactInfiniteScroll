@@ -1,0 +1,38 @@
+.Panel{
+    z-index: 100;
+
+    .Dropdown{
+        position: relative;
+        max-width: 400px;
+        margin-bottom: 2em;
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            font-size: 2em;
+            border-bottom: 2px solid;
+            border-left: 2px solid;
+            transform: rotate(-45deg);
+            top: 33%;
+            right: 1em;
+        }
+
+        select{
+            width: 100%;
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 1em;
+            -webkit-appearance: none;
+            border-radius: 25px;
+            padding: 1em;
+            padding-right: 4em;
+    
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
